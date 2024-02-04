@@ -1,0 +1,115 @@
+@import '../utils/var.scss';
+
+.hero {
+    margin-top: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    &__tagline, &__detail {
+        font-family: $font-family-base;
+        font-size: 18px;
+        color: $subtitle-color;
+        margin-bottom: 30px;
+
+        &.hero__detail {
+            opacity: 0.7;
+            line-height: 20px;
+            max-width: 398px;
+            font-size: 16px;
+        }
+    }
+
+    &__tagline {
+        letter-spacing: 2.88px;
+        font-weight: bold;
+    }
+
+    &__title {
+        font-family: $font-family-title;
+        font-size: 54px;
+        color: $base-color;
+        line-height: 60.5px;
+        margin-bottom: 20px;
+        font-weight: 200;
+        max-width: 628px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__image {
+        position: relative;
+        margin-left: -150px;
+        z-index: 1;
+        border-radius: 10px;
+        -webkit-box-shadow: -15px 20px 50px 5px #46464682;
+        box-shadow: -15px 20px 50px 5px #46464682;
+        overflow: hidden;
+
+        img {
+            width: 754px;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+    }
+      
+    &__btn, &__link {
+        font-family: $font-family-base;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        color: inherit;
+
+        &.hero__btn {
+            border-radius: 5px;
+            padding: 17.5px 42.5px;
+            background-color: $accent-color;
+            color: $base-color;
+            border: none;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $btn-hover;;
+            }
+        }
+    }
+
+    &__link {
+        margin-left: 51px;
+
+        img {
+            width: 29px;
+            height: 29px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    }
+
+    &__scroll {
+        font-family: $font-family-base;
+        font-size: 16px;
+        font-weight: bold;
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        top: calc(100% + 135px);
+        left: 0;
+
+        img {
+            height: 28px;
+            width: 28px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    }
+
+     
+}
