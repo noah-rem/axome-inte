@@ -21,6 +21,11 @@ body::before {
   background-image: linear-gradient(to right, #FFFFFF 50%, rgba(246, 246, 251, 0.5) 50%);
   z-index: -1;
 }
+@media (max-width: 768px), (max-width: 992px) {
+  body::before {
+    display: none;
+  }
+}
 
 .container {
   max-width: 1235px;
@@ -28,6 +33,11 @@ body::before {
   padding: 15px;
   position: relative;
   z-index: 1;
+}
+@media (max-width: 768px), (max-width: 992px) {
+  .container {
+    padding: 10px;
+  }
 }
 
 .header {

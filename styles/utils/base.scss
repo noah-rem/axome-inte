@@ -22,6 +22,10 @@ body {
     height: 928px;
     background-image: linear-gradient(to right, #FFFFFF 50%, rgba(246, 246, 251, 0.5) 50%);
     z-index: -1;
+
+    @media (max-width: $breakpoint-md), (max-width: $breakpoint-lg) {
+      display: none;
+    }
   }
 }
 
@@ -31,4 +35,8 @@ body {
   padding: 15px;
   position: relative;
   z-index: 1;
+
+  @media (max-width: $breakpoint-md), (max-width: $breakpoint-lg) {
+    padding: 10px;
+  }
 }
