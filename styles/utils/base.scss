@@ -1,5 +1,9 @@
 @import '../utils/var.scss';
 
+html{
+  scroll-behavior: smooth;
+}
+
 body, h1, p {
   margin: 0;
   padding: 0;
