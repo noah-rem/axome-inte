@@ -379,6 +379,63 @@ body::before {
 .about__btn:hover {
   background-color: #30CC9E;
 }
+@media (max-width: 992px) {
+  .about {
+    margin: 0;
+  }
+  .about__image img {
+    height: 450px;
+  }
+  .about__content {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 15px;
+  }
+  .about__image {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .about__image img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+  }
+  .about__content {
+    width: 100%;
+    padding: 0;
+    align-items: flex-start;
+    margin-left: 0;
+  }
+  .about__title, .about__subtitle, .about__text {
+    max-width: 100%;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .about__title {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  .about__subtitle {
+    margin-top: 28px;
+    margin-bottom: 0;
+  }
+  .about__text {
+    margin-bottom: 30px;
+  }
+  .about__btn {
+    display: block;
+    margin: 20px 0 0;
+    text-align: left;
+  }
+}
 
 .best-menu {
   position: relative;
