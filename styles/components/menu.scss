@@ -36,6 +36,10 @@
         text-align: center;
         margin-bottom: 60px;
     }
+
+    @media (max-width: $breakpoint-md) {
+        padding: 25px 15px;
+    }
 }
 
 .swiper-slide {
@@ -50,11 +54,27 @@
         height: auto;
         display: block;
     }
+
+    @media (max-width: $breakpoint-md) {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
 }
 
 .menu-item {
     &__content {
         padding: 40px;
+        @media (max-width: $breakpoint-md) {
+            padding: 20px;
+            text-align: left;
+            max-width: 266px;
+        }
     }
 
     &__name, &__description, &__link {
@@ -88,6 +108,12 @@
     justify-content: right;
     gap: 30px;
     margin-top: 40px;
+
+    @media (max-width: $breakpoint-md) {
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
 }
 
 .swiper-custom-prev, .swiper-custom-next {
@@ -97,6 +123,11 @@
     display: flex;
     justify-content: center;
     align-items: right;
+
+    @media (max-width: $breakpoint-md) {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 .swiper-button-next, .swiper-button-prev {
