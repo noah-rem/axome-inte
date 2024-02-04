@@ -1,0 +1,104 @@
+@import '../utils/var.scss';
+
+.best-menu {
+    position: relative;
+    z-index: 1;
+    padding: 100px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100vw;
+        height: 100%;
+        background-color: $background-color-menu;
+        z-index: -1;
+        transform: translateX(-50%);
+        opacity: 0.5;
+    }
+
+    &__title {
+        font-family: $font-family-base;
+        font-size: 16px;
+        font-weight: bold;
+        color: $subtitle-color;
+        margin-bottom: 20px;
+        letter-spacing: 2.88px;
+        text-align: center;
+    } 
+
+    &__subtitle {
+        font-family: $font-family-title;
+        font-size: 32px;
+        line-height: 36px;
+        font-weight: 200;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+
+.swiper-slide {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+.menu-item {
+    &__content {
+        padding: 40px;
+    }
+
+    &__name, &__description, &__link {
+        font-family: $font-family-base;
+        color: $base-color;
+        margin-bottom: 20px;
+
+        &.menu-item__name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        &.menu-item__description {
+            font-size: 16px;
+            line-height: 20px;
+            height: 39px;
+            opacity: 0.7;
+            margin-bottom: 30px;
+        }
+
+        &.menu-item__link {
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}
+
+.swiper-custom-navigation {
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.swiper-custom-prev, .swiper-custom-next {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    display: none !important;
+}
