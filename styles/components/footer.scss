@@ -1,0 +1,37 @@
+@import '../utils/var.scss';
+
+.footer {
+    overflow: hidden;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        max-width: $max-width;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    &__column {
+        flex: 1;
+        min-width: 200px;
+        margin-right: 20px;
+    }
+
+    &__title {
+        font-family: $font-family-base;
+        font-size: 24px;
+        font-weight: bold;
+        color: $base-color;
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        font-family: $font-family-base;
+        font-size: 16px;
+        color: $base-color;
+        opacity: 0.7;
+        display: block;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+}
